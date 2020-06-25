@@ -1,0 +1,34 @@
+.cardContainer {
+  max-width: 570px;
+  margin: 20px auto;
+  border-radius: 3px !important;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.border {
+  height: 1px;
+  margin-bottom: 0.5rem;
+  background-color: rgba(162, 143, 143, 0.39);
+}
+
+.formComment {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.border {
+  height: 1px;
+  margin: 0.5rem 0;
+  background-color: rgba(162, 143, 143, 0.39);
+}
+
+.commentContainer {
+  display: flex;
+  justify-content: space-between;
+}

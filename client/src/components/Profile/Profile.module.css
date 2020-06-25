@@ -1,0 +1,59 @@
+.infoContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+h6 {
+  display: block;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.border {
+  height: 1px;
+  background-color: rgba(162, 143, 143, 0.39);
+  margin: 1.4rem auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.item {
+  width: 30%;
+  height: 30%;
+  margin: 0.4rem auto;
+}
+
+.followButton {
+  height: 1.5rem !important;
+  margin: 1.6rem auto 0 auto !important;
+  background-color: #0095f6 !important;
+  color: #fff !important;
+  text-transform: none !important;
+  letter-spacing: 0.04em !important;
+  font-weight: bold !important;
+}

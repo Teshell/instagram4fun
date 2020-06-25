@@ -1,0 +1,28 @@
+{
+  "name": "instagram-clone-app",
+  "version": "1.0.0",
+  "description": "This is an Instagram Clone App created using the MERN stack.",
+  "main": "app.js",
+  "author": "Zinedine Hamadi",
+  "license": "MIT",
+  "scripts": {
+    "client-install": "yarn add --cwd client",
+    "start": "node app.js",
+    "server": "nodemon app.js",
+    "client": "yarn --cwd client start",
+    "dev": "concurrently \"yarn server\" \"yarn client\"",
+    "heroku-postbuild": "YARN_PRODUCTION=false yarn install && yarn --cwd ./client install && yarn --cwd ./client run build"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.2.0",
+    "config": "^3.3.1",
+    "express": "^4.17.1",
+    "helmet": "^3.23.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.18"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

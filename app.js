@@ -13,6 +13,9 @@ const mongoose = require("mongoose");
 
 // DB Config
 const { MONGOURI } = require("./config/keys");
+require("./models/user");
+require("./models/post");
+
 const requireLogin = require("./middleware/requireLogin");
 
 mongoose.connect(MONGOURI, {
@@ -27,9 +30,6 @@ mongoose.connection.on("connected", () => {
 mongoose.connection.on("error", (err) => {
   console.log("An error has occured!", err);
 });
-
-require("./models/user");
-require("./models/post");
 
 app.use(express.json());
 app.use(require("./routes/auth"));
